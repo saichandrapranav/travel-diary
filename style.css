@@ -1,0 +1,206 @@
+*{
+
+    margin: 0;
+    padding: 0;
+   
+}
+.loading{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    /* position: relative; */
+    /* top: 0; */
+    /* Allows the content to move anywhere.. */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    animation: screen 1s ease-out 5s both;
+}
+
+.loading p{
+    text-align: center;
+    display: inline-block;
+    font-size: 70px;
+    animation: blink 1s ease-in-out infinite;
+}
+
+.loading p:nth-child(1) {
+    animation-delay: .1s;
+}
+.loading p:nth-child(2){
+    animation-delay: .2s;
+
+}
+.loading p:nth-child(3){
+    animation-delay: .3s;
+}
+.loading p:nth-child(4){
+    animation-delay: .4s;
+}
+.loading p:nth-child(5){
+    animation-delay: .5s;
+}
+.loading p:nth-child(6){
+    animation-delay: .6s;
+}
+.loading p:nth-child(7){
+    animation-delay: .7s;
+}
+
+
+
+
+/* animations. */
+@keyframes blink {
+    0%{
+        color:white;
+    }
+    25% {
+        color:black;
+        transform: scale(.6);
+    }
+    50% {
+        color:white;
+        transform: scale(1);
+    }
+    75% {
+        color:white;
+        transform: scale(.6);
+    }
+    100% {
+        color:black;
+        transform: scale(.6);
+    }
+
+}
+.content{
+    background-image: url("https://wallpaperaccess.com/full/391828.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@keyframes screen{
+    to {
+        /* position: relative; */
+        /* transform: traslateY(-100%); */
+        display: none;
+    }
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    /* float: right; */
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:darkcyan;
+}
+.navbar ul li:nth-child(1){
+    float: left;
+}
+hr{
+    width: 99.8%;
+}
+
+.navbar{
+    padding-bottom:50px;
+}
+
+.introtext{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.introtext .welcome p {
+    color:darkcyan;
+    font-size: 40px;
+}
+.introtext .welcome p:nth-child(2){
+    font-size: 50px;
+    font-weight: 1000;
+}
+.button{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    font-size: 18px;
+}
+.welcome{
+    text-align: center;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
+.gallery{
+    background-color: black;
+}
+.imga img{
+    margin: 40px 150px;
+}
+.gallery p{
+    text-align: center;
+    font-size: 25px;
+    color:white;
+}
+
+.imga img:hover{
+    filter: grayscale(20);
+}
+.logos{
+    color:white;
+    size: 40px;
+}
+.clouds{
+    display:flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.clouds img{
+    animation: cloud-top 5s linear infinite;
+}
+/* transform :-> change on top of css tag */
+@keyframes cloud-top {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+        
+    }
+    
+     
+     75% {
+        opacity: 1;
+        /* transform: scale(1.1); */
+    }
+    100%{
+        transform: translateY(-90vh);
+        opacity: 1;
+    }
+}
+.clouds img:nth-child(1){
+    animation-delay: 1s;
+}
+.clouds img:nth-child(2){
+    animation-delay: 4s;
+}
+.clouds img:nth-child(3){
+    animation-delay: 8s;
+}
+.clouds img:nth-child(4){
+    animation-delay: 5s;
+}
+.clouds img:nth-child(5){
+    animation-delay: 2s;
+}
